@@ -15,7 +15,7 @@ copyBtn.addEventListener('click', async () => {
     window.getSelection().removeAllRanges();
   }
   status.textContent = 'Copied!';
-  setTimeout(() => { status.textContent = 'Mint drops with the colony.'; }, 2000);
+  setTimeout(() => { status.textContent = 'Tap to copy.'; }, 2000);
 });
 
 const flipCard = document.getElementById('flip-card');

@@ -26,7 +26,7 @@ h1,h2{font-family:'Mochiy Pop P One',cursive;margin:0;font-weight:400;text-trans
 .socials{display:flex;gap:16px;font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.6px}
 .socials a{opacity:.75;transition:opacity .2s,transform .2s}
 .socials a:hover{opacity:1;transform:translateY(-2px)}
-.nav-cta{background:var(--lime);color:var(--ink);border-radius:999px;padding:10px 20px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;box-shadow:0 4px 14px #00000030;transition:transform .2s,box-shadow .2s}
+.nav-cta{background:var(--lime);color:var(--ink);border-radius:999px;padding:10px 20px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;white-space:nowrap;box-shadow:0 4px 14px #00000030;transition:transform .2s,box-shadow .2s}
 .nav-cta:hover{transform:translateY(-2px) scale(1.03);box-shadow:0 6px 18px #00000040}
 
 /* hero — two-column: copy left, big mascot visual right */
@@ -37,8 +37,9 @@ h1,h2{font-family:'Mochiy Pop P One',cursive;margin:0;font-weight:400;text-trans
 .hero h1{font-size:clamp(46px,5.6vw,96px);line-height:.98;letter-spacing:-1.5px;color:var(--ink);text-shadow:3px 4px 0 var(--cream)}
 .hero h1 span{color:var(--purple)}
 .hero .sub{max-width:520px;margin:20px 0 30px;font-size:19px;line-height:1.65}
-.hero-btn{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
 .hero .button{margin-top:0}
+.hero-social{display:none}
+.socials .short{display:none}
 .hero-stats{display:flex;gap:34px;margin-top:38px;flex-wrap:wrap}
 .hero-stats strong{display:block;font-family:'Mochiy Pop P One',cursive;font-weight:400;font-size:20px;color:var(--purple);text-transform:uppercase;-webkit-text-stroke:1px var(--ink);paint-order:stroke fill}
 .hero-stats span{display:block;font-size:10.5px;letter-spacing:.6px;color:#6b5480;text-transform:uppercase;font-weight:700;margin-top:2px}
@@ -193,8 +194,8 @@ footer p{font-size:11px;line-height:1.6;margin:0;color:#e6cdf5;flex:1}
   .navigation{gap:12px}
   .socials{display:none}
   .nav-cta{padding:10px 14px}
+  .hero-social{display:flex;justify-content:center;gap:12px;margin-top:14px}
   .hero-copy{text-align:center}
-  .hero-btn{justify-content:center}
   .hero-tag{margin-left:auto;margin-right:auto}
   footer p{flex-basis:100%}
   .footer-social{margin-left:0}
